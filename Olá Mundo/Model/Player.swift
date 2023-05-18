@@ -20,7 +20,7 @@ class Player : RewardPlayer {
         self.name = name
         self.lvl = 1
         self.lvlProgress = 0.0000001
-        self.damage = 1
+        self.damage = 0
         self.gold = 0
         self.stage = 1
         self.stageProgress = 0

@@ -19,7 +19,7 @@ class Mob {
     }
     
     func Damage (damage : Float){
-        print("Oia a pedra !")
+        print("Oia a pedra ! Dano: \(damage)")
         life -= damage
     }
 }

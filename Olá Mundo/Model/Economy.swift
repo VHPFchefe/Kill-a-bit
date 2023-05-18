@@ -35,7 +35,7 @@ class Economy{
             
             self.costUpgradeWeapon += 1
             
-            print("Força atual: \(strengthDamage) e Dano da Arma atual: \(weaponDamage)")
+            print("Força atual: \(strengthDamage) e o Fator de dano da Arma atual: \(weaponDamage)")
             
         }
         

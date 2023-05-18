@@ -51,6 +51,8 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var viewControl : UIControl!
     
+    @IBOutlet weak var viewLifeMob : UIProgressView!
+    
     
     func ViewUpdate(){
         viewLvlProgress.setProgress(playerOnline.GetLVLProgress(), animated: true)

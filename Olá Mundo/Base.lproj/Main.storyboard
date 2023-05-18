@@ -131,6 +131,16 @@
                                             <action selector="UpgradeWeapon:" destination="BYZ-38-t0r" eventType="touchDown" id="8DF-ct-uH2"/>
                                         </connections>
                                     </button>
+                                    <progressView opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progressViewStyle="bar" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="bwm-gW-Rv2">
+                                        <rect key="frame" x="8" y="52.5" width="359" height="1.5"/>
+                                        <color key="backgroundColor" red="0.71736219369999998" green="0.7952852936" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="tintColor" red="1" green="0.49327188729999999" blue="0.47399842739999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="359" id="WSC-ok-VNi"/>
+                                            <constraint firstAttribute="height" constant="0.5" id="u9T-Lm-vfn"/>
+                                        </constraints>
+                                        <color key="progressTintColor" systemColor="systemRedColor"/>
+                                    </progressView>
                                 </subviews>
                                 <accessibility key="accessibilityConfiguration">
                                     <accessibilityTraits key="traits" button="YES"/>
@@ -138,11 +148,15 @@
                                 <constraints>
                                     <constraint firstItem="TTw-Yd-4yw" firstAttribute="leading" secondItem="6Ph-gS-3Oh" secondAttribute="leading" constant="8" id="BBS-5d-UWi"/>
                                     <constraint firstItem="NwV-jW-mhB" firstAttribute="leading" secondItem="TTw-Yd-4yw" secondAttribute="trailing" constant="8" symbolic="YES" id="H3E-8a-Nlu"/>
+                                    <constraint firstAttribute="trailing" secondItem="bwm-gW-Rv2" secondAttribute="trailing" constant="8" id="Jzg-eI-L0k"/>
                                     <constraint firstItem="TTw-Yd-4yw" firstAttribute="top" secondItem="6Ph-gS-3Oh" secondAttribute="top" constant="456" id="SIO-qM-ljT"/>
                                     <constraint firstAttribute="bottom" secondItem="NwV-jW-mhB" secondAttribute="bottom" constant="8" id="ThT-ww-ZI6"/>
                                     <constraint firstItem="NwV-jW-mhB" firstAttribute="top" secondItem="6Ph-gS-3Oh" secondAttribute="top" constant="456" id="c04-NR-dfh"/>
                                     <constraint firstAttribute="trailing" secondItem="NwV-jW-mhB" secondAttribute="trailing" constant="147" id="cC1-n6-5UK"/>
+                                    <constraint firstItem="bwm-gW-Rv2" firstAttribute="top" secondItem="6Ph-gS-3Oh" secondAttribute="top" constant="52.5" id="koc-uv-6g0"/>
                                     <constraint firstAttribute="bottom" secondItem="TTw-Yd-4yw" secondAttribute="bottom" constant="8" id="nxm-Df-ssc"/>
+                                    <constraint firstItem="bwm-gW-Rv2" firstAttribute="leading" secondItem="6Ph-gS-3Oh" secondAttribute="leading" constant="8" id="qla-fA-NmA"/>
+                                    <constraint firstItem="TTw-Yd-4yw" firstAttribute="top" secondItem="bwm-gW-Rv2" secondAttribute="bottom" constant="403" id="wTx-in-NlC"/>
                                 </constraints>
                                 <connections>
                                     <action selector="Tap:" destination="BYZ-38-t0r" eventType="touchDown" id="hAi-Dm-x6z"/>
@@ -180,6 +194,7 @@
                     <connections>
                         <outlet property="viewControl" destination="6Ph-gS-3Oh" id="GZ9-WK-vBI"/>
                         <outlet property="viewGold" destination="Qr5-af-yyr" id="PKk-1s-oHz"/>
+                        <outlet property="viewLifeMob" destination="bwm-gW-Rv2" id="Qsj-c7-p7e"/>
                         <outlet property="viewLvl" destination="vsX-IY-Bt9" id="0oT-E0-kY9"/>
                         <outlet property="viewLvlProgress" destination="yeF-mQ-0pB" id="Hfc-9g-6Hz"/>
                         <outlet property="viewPlayer" destination="wYN-GL-rm6" id="kQb-rR-eDq"/>
@@ -200,6 +215,9 @@
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
