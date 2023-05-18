@@ -13,9 +13,19 @@ class LabelBattleAttack: UILabel {
 
     private func commonInit() {
         // Configurações personalizadas para a sua UILabel
-        self.textColor = UIColor.white
-        self.backgroundColor = UIColor.black
-        self.isHidden = false
-        self.text = "Touch"
+        // Cria um atributo de texto para o estilo desejado
+        let atributos: [NSAttributedString.Key: Any] = [
+            .font: UIFont.boldSystemFont(ofSize: 24), // Definição da fonte em negrito
+            .foregroundColor: UIColor.red // Definição da cor do texto
+        ]
+
+        // Cria um NSAttributedString com o texto e os atributos
+        let attributedText = NSAttributedString(string: "Tap", attributes: atributos)
+
+        // Define o atributo de texto na UILabel
+        self.attributedText = attributedText
     }
+    
+    
+    
 }

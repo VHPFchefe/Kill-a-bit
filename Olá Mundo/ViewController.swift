@@ -9,14 +9,14 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         economy = Economy()
+        
         battle = Battle(mob: mob, player: playerOnline, economy: economy)
         ViewUpdate()
+        
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(handleTap(_:)))
                 viewControl.addGestureRecognizer(tapGesture)
-        
-        
-        
     }
     
     let playerOnline = Player(name: "Chefe")
@@ -76,8 +76,8 @@ class ViewController: UIViewController {
         viewLabelBattle.frame.origin = touchPoint
         viewControl.addSubview(viewLabelBattle)
       
-        // Configura o temporizador para remover a View após 1 segundo
-        timer = Timer.scheduledTimer(timeInterval: 0.1, target: self, selector: #selector(removeCustomView), userInfo: nil, repeats: false)
+        // Configura o temporizador
+        timer = Timer.scheduledTimer(timeInterval: 0.3, target: self, selector: #selector(removeCustomView), userInfo: nil, repeats: false)
     }
     
     @objc func removeCustomView() {
