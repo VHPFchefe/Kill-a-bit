@@ -16,6 +16,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" layoutMarginsFollowReadableWidth="YES" image="Image" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZPJ-R9-bpv">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="375" id="WQ5-k6-cxC"/>
+                                    <constraint firstAttribute="height" constant="667" id="mZC-GL-rGj"/>
+                                </constraints>
+                            </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="person.crop.circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="dOh-uX-x6u">
                                 <rect key="frame" x="0.0" y="1" width="131" height="103"/>
                                 <constraints>
@@ -97,9 +104,8 @@
                                 </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <view clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" translatesAutoresizingMaskIntoConstraints="NO" id="6Ph-gS-3Oh" customClass="UIControl">
+                            <view clipsSubviews="YES" contentMode="scaleAspectFill" translatesAutoresizingMaskIntoConstraints="NO" id="6Ph-gS-3Oh" customClass="UIControl">
                                 <rect key="frame" x="0.0" y="138" width="375" height="529"/>
-                                <color key="backgroundColor" red="0.99942404029999998" green="0.98555368190000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <accessibility key="accessibilityConfiguration">
                                     <accessibilityTraits key="traits" button="YES"/>
                                 </accessibility>
@@ -118,19 +124,25 @@
                             <accessibilityTraits key="traits" button="YES" image="YES"/>
                         </accessibility>
                         <constraints>
+                            <constraint firstItem="ZPJ-R9-bpv" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="6e9-rF-nGs"/>
                             <constraint firstItem="OWK-Ua-Z4U" firstAttribute="leading" secondItem="dOh-uX-x6u" secondAttribute="trailing" constant="8" symbolic="YES" id="HPn-r5-uJa"/>
                             <constraint firstItem="dOh-uX-x6u" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="JAR-RG-gwg"/>
                             <constraint firstItem="6Ph-gS-3Oh" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Nj9-GA-XpD"/>
                             <constraint firstItem="vsX-IY-Bt9" firstAttribute="top" secondItem="dOh-uX-x6u" secondAttribute="bottom" constant="14.5" id="Od5-Zs-rHF"/>
                             <constraint firstItem="dOh-uX-x6u" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="0.5" id="QNY-oa-LRd"/>
                             <constraint firstItem="yeF-mQ-0pB" firstAttribute="top" secondItem="OWK-Ua-Z4U" secondAttribute="bottom" constant="15" id="Qn9-FI-oKa"/>
+                            <constraint firstItem="ZPJ-R9-bpv" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="Tr1-Tg-7hX"/>
+                            <constraint firstItem="ZPJ-R9-bpv" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="U6C-6i-gza"/>
                             <constraint firstItem="OWK-Ua-Z4U" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="7" id="Xiv-Fa-wrt"/>
+                            <constraint firstItem="ZPJ-R9-bpv" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Y9n-bV-j1n"/>
                             <constraint firstItem="vsX-IY-Bt9" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="YPQ-6m-Rqb"/>
                             <constraint firstItem="6Ph-gS-3Oh" firstAttribute="top" secondItem="vsX-IY-Bt9" secondAttribute="bottom" constant="1" id="ajb-73-DQc"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="OWK-Ua-Z4U" secondAttribute="trailing" constant="16" id="jAf-sq-7lr"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="yeF-mQ-0pB" secondAttribute="trailing" constant="16" id="oFy-hn-UId"/>
                             <constraint firstItem="6Ph-gS-3Oh" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="saJ-F0-mzH"/>
                             <constraint firstItem="6Ph-gS-3Oh" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="tfD-rx-3Rm"/>
+                            <constraint firstItem="ZPJ-R9-bpv" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="uyI-ZO-XDN"/>
+                            <constraint firstItem="ZPJ-R9-bpv" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="xBe-ZU-7N7"/>
                             <constraint firstItem="yeF-mQ-0pB" firstAttribute="leading" secondItem="vsX-IY-Bt9" secondAttribute="trailing" constant="8" symbolic="YES" id="yQW-eY-HA4"/>
                         </constraints>
                     </view>
@@ -149,6 +161,7 @@
     </scenes>
     <color key="tintColor" red="0.51658736920000004" green="1" blue="0.61468485240000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
     <resources>
+        <image name="Image" width="1097.5" height="1102"/>
         <image name="person.crop.circle.fill" catalog="system" width="128" height="123"/>
         <systemColor name="opaqueSeparatorColor">
             <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

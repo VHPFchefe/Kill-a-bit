@@ -25,8 +25,9 @@ class ViewController: UIViewController {
     @IBOutlet weak var viewLvl: UILabel!
     
     @IBAction func Tap(_ sender: Any) {
-        battle.Battle()
-        ViewUpdate()
+        if(battle.Battle()){
+            ViewUpdate()
+        }
     }
     
     func ViewUpdate(){
