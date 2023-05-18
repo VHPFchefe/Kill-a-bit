@@ -3,12 +3,13 @@ import UIKit
 class ViewController: UIViewController {
 
     var battle: Battle!
+    var economy: Economy!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        battle = Battle(mob: mob, player: playerOnline)
+        economy = Economy()
+        battle = Battle(mob: mob, player: playerOnline, economy: economy)
         ViewUpdate()
-        
     }
     
     let playerOnline = Player(name: "Chefe")
@@ -28,6 +29,14 @@ class ViewController: UIViewController {
         if(battle.Battle()){
             ViewUpdate()
         }
+    }
+    
+    @IBAction func UpgradeStrength(_ sender: Any) {
+        economy.DamageUpgrade()
+    }
+    
+    @IBAction func UpgradeWeapon(_ sender: Any) {
+        economy.WeaponUpgrade()
     }
     
     func ViewUpdate(){

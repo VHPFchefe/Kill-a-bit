@@ -11,7 +11,7 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Ola__Mundo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="BYZ-38-t0r" customClass="ViewController" customModule="Ola__Mundo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" multipleTouchEnabled="YES" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -106,12 +106,45 @@
                             </label>
                             <view clipsSubviews="YES" contentMode="scaleAspectFill" translatesAutoresizingMaskIntoConstraints="NO" id="6Ph-gS-3Oh" customClass="UIControl">
                                 <rect key="frame" x="0.0" y="138" width="375" height="529"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TTw-Yd-4yw">
+                                        <rect key="frame" x="8" y="486" width="101" height="35"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="35" id="LN7-yv-6gt"/>
+                                            <constraint firstAttribute="width" constant="75" id="clC-5c-bSU"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="gray" title="Strength"/>
+                                        <connections>
+                                            <action selector="UpgradeStrength:" destination="BYZ-38-t0r" eventType="touchDown" id="oJf-1T-tOP"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NwV-jW-mhB">
+                                        <rect key="frame" x="117" y="486" width="111" height="35"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="75" id="2hG-8K-iIV"/>
+                                            <constraint firstAttribute="height" constant="35" id="F8y-UJ-6F4"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="gray" title="Weapon"/>
+                                        <connections>
+                                            <action selector="UpgradeWeapon:" destination="BYZ-38-t0r" eventType="touchDown" id="8DF-ct-uH2"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
                                 <accessibility key="accessibilityConfiguration">
                                     <accessibilityTraits key="traits" button="YES"/>
                                 </accessibility>
                                 <constraints>
+                                    <constraint firstItem="TTw-Yd-4yw" firstAttribute="leading" secondItem="6Ph-gS-3Oh" secondAttribute="leading" constant="8" id="7Ca-5D-iFW"/>
+                                    <constraint firstAttribute="bottom" secondItem="NwV-jW-mhB" secondAttribute="bottom" constant="8" id="Ojd-Bh-8ug"/>
+                                    <constraint firstItem="TTw-Yd-4yw" firstAttribute="top" secondItem="6Ph-gS-3Oh" secondAttribute="top" constant="486" id="R5k-QX-Mko"/>
                                     <constraint firstAttribute="height" constant="529" id="Seu-O0-rlb"/>
                                     <constraint firstAttribute="width" constant="375" id="Wew-Iz-w9r"/>
+                                    <constraint firstAttribute="trailing" secondItem="NwV-jW-mhB" secondAttribute="trailing" constant="209" id="eM1-hd-rru"/>
+                                    <constraint firstItem="NwV-jW-mhB" firstAttribute="top" secondItem="6Ph-gS-3Oh" secondAttribute="top" constant="486" id="mjr-D5-ZWz"/>
+                                    <constraint firstAttribute="bottom" secondItem="TTw-Yd-4yw" secondAttribute="bottom" constant="8" id="tH1-Bk-2Dj"/>
+                                    <constraint firstItem="NwV-jW-mhB" firstAttribute="leading" secondItem="TTw-Yd-4yw" secondAttribute="trailing" constant="8" symbolic="YES" id="znh-i9-Tzx"/>
                                 </constraints>
                                 <connections>
                                     <action selector="Tap:" destination="BYZ-38-t0r" eventType="touchDown" id="hAi-Dm-x6z"/>

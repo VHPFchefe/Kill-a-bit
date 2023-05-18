@@ -9,7 +9,7 @@ import Foundation
 
 class Player : RewardPlayer {
     private var name : String
-    private var damage : Int
+    private var damage : Float
     private var lvl : Int
     private var lvlProgress : Float
     private var gold : Int
@@ -30,7 +30,7 @@ class Player : RewardPlayer {
         let rewardGold = Int(1+self.stage / 10)
         // compilador n guento, então vou quebrar esses coef aqui
         let coeflvl = 1/(100 * Float(lvl))
-        let rewardLvLProgress = Float(0.09 + coeflvl * Float(stage))
+        let rewardLvLProgress = Float(0.01 + coeflvl * Float(stage))
         print("Lucrou \(rewardGold) !")
         print("Progrediu \(rewardLvLProgress)%")
         
@@ -62,7 +62,7 @@ class Player : RewardPlayer {
         print("Ta usando bomba ?  Seu dano agora é \(self.damage)")
     }
     
-    func GetDamage() -> Int{
+    func GetDamage() -> Float{
         return damage
     }
     

@@ -1,15 +1,17 @@
 import Foundation
 
 class Battle {
-
+    private var economy : Economy
     private var mob : Mob
     private var player : Player
-    private var stageTotalMob = 15
-    private var stage_progress = 15
+    private var stageTotalMob = 10
+    private var stage_progress = 10
     
-    init(mob: Mob, player: Player) {
+    
+    init(mob: Mob, player: Player, economy : Economy) {
         self.mob = mob
         self.player = player
+        self.economy = economy
     }
     
     func NewBattle(mob: Mob, player: Player){
@@ -18,7 +20,7 @@ class Battle {
     }
     
     func Battle () -> Bool{
-        mob.Damage(damage: player.GetDamage())
+        mob.Damage(damage: player.GetDamage() + economy.GetDamage())
             
         if(mob.GetLife() <= 0){
             player.EarnReward()

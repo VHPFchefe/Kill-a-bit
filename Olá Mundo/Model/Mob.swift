@@ -1,24 +1,24 @@
 import Foundation
 
 class Mob {
-    private var lifeSpawn : Int = 10
-    private var life : Int
+    private var lifeSpawn : Float = 10
+    private var life : Float
 
     init(stage : Int) {
-        self.life = lifeSpawn + (lifeSpawn * stage / 10)
+        self.life = lifeSpawn + (lifeSpawn * Float(stage) / 10)
     }
     
-    func GetLife() -> Int{
+    func GetLife() -> Float{
         return life
     }
     
     func Spawn(stage : Int){
-        life = lifeSpawn + (lifeSpawn * stage / 10)
+        life = lifeSpawn + (lifeSpawn * Float(stage) / 10)
         
             print("Ta Saindo da Jaula o Monstro (HP: \(life))")
     }
     
-    func Damage (damage : Int){
+    func Damage (damage : Float){
         print("Oia a pedra !")
         life -= damage
     }
