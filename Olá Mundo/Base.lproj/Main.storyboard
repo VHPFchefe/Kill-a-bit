@@ -104,14 +104,14 @@
                                 </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <view clipsSubviews="YES" contentMode="scaleAspectFill" translatesAutoresizingMaskIntoConstraints="NO" id="6Ph-gS-3Oh" customClass="UIControl">
+                            <view clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" translatesAutoresizingMaskIntoConstraints="NO" id="6Ph-gS-3Oh" customClass="UIControl">
                                 <rect key="frame" x="0.0" y="138" width="375" height="529"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TTw-Yd-4yw">
-                                        <rect key="frame" x="8" y="486" width="101" height="35"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TTw-Yd-4yw">
+                                        <rect key="frame" x="8" y="456" width="101" height="65"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="35" id="LN7-yv-6gt"/>
-                                            <constraint firstAttribute="width" constant="75" id="clC-5c-bSU"/>
+                                            <constraint firstAttribute="width" constant="101" id="Gvz-aF-xCG"/>
+                                            <constraint firstAttribute="height" constant="65" id="bAW-qq-ISe"/>
                                         </constraints>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="gray" title="Strength"/>
@@ -119,11 +119,11 @@
                                             <action selector="UpgradeStrength:" destination="BYZ-38-t0r" eventType="touchDown" id="oJf-1T-tOP"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NwV-jW-mhB">
-                                        <rect key="frame" x="117" y="486" width="111" height="35"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NwV-jW-mhB">
+                                        <rect key="frame" x="117" y="456" width="111" height="65"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="75" id="2hG-8K-iIV"/>
-                                            <constraint firstAttribute="height" constant="35" id="F8y-UJ-6F4"/>
+                                            <constraint firstAttribute="height" constant="65" id="bPk-E3-kBI"/>
+                                            <constraint firstAttribute="width" constant="111" id="nLG-pm-el9"/>
                                         </constraints>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="gray" title="Weapon"/>
@@ -136,15 +136,13 @@
                                     <accessibilityTraits key="traits" button="YES"/>
                                 </accessibility>
                                 <constraints>
-                                    <constraint firstItem="TTw-Yd-4yw" firstAttribute="leading" secondItem="6Ph-gS-3Oh" secondAttribute="leading" constant="8" id="7Ca-5D-iFW"/>
-                                    <constraint firstAttribute="bottom" secondItem="NwV-jW-mhB" secondAttribute="bottom" constant="8" id="Ojd-Bh-8ug"/>
-                                    <constraint firstItem="TTw-Yd-4yw" firstAttribute="top" secondItem="6Ph-gS-3Oh" secondAttribute="top" constant="486" id="R5k-QX-Mko"/>
-                                    <constraint firstAttribute="height" constant="529" id="Seu-O0-rlb"/>
-                                    <constraint firstAttribute="width" constant="375" id="Wew-Iz-w9r"/>
-                                    <constraint firstAttribute="trailing" secondItem="NwV-jW-mhB" secondAttribute="trailing" constant="209" id="eM1-hd-rru"/>
-                                    <constraint firstItem="NwV-jW-mhB" firstAttribute="top" secondItem="6Ph-gS-3Oh" secondAttribute="top" constant="486" id="mjr-D5-ZWz"/>
-                                    <constraint firstAttribute="bottom" secondItem="TTw-Yd-4yw" secondAttribute="bottom" constant="8" id="tH1-Bk-2Dj"/>
-                                    <constraint firstItem="NwV-jW-mhB" firstAttribute="leading" secondItem="TTw-Yd-4yw" secondAttribute="trailing" constant="8" symbolic="YES" id="znh-i9-Tzx"/>
+                                    <constraint firstItem="TTw-Yd-4yw" firstAttribute="leading" secondItem="6Ph-gS-3Oh" secondAttribute="leading" constant="8" id="BBS-5d-UWi"/>
+                                    <constraint firstItem="NwV-jW-mhB" firstAttribute="leading" secondItem="TTw-Yd-4yw" secondAttribute="trailing" constant="8" symbolic="YES" id="H3E-8a-Nlu"/>
+                                    <constraint firstItem="TTw-Yd-4yw" firstAttribute="top" secondItem="6Ph-gS-3Oh" secondAttribute="top" constant="456" id="SIO-qM-ljT"/>
+                                    <constraint firstAttribute="bottom" secondItem="NwV-jW-mhB" secondAttribute="bottom" constant="8" id="ThT-ww-ZI6"/>
+                                    <constraint firstItem="NwV-jW-mhB" firstAttribute="top" secondItem="6Ph-gS-3Oh" secondAttribute="top" constant="456" id="c04-NR-dfh"/>
+                                    <constraint firstAttribute="trailing" secondItem="NwV-jW-mhB" secondAttribute="trailing" constant="147" id="cC1-n6-5UK"/>
+                                    <constraint firstAttribute="bottom" secondItem="TTw-Yd-4yw" secondAttribute="bottom" constant="8" id="nxm-Df-ssc"/>
                                 </constraints>
                                 <connections>
                                     <action selector="Tap:" destination="BYZ-38-t0r" eventType="touchDown" id="hAi-Dm-x6z"/>
@@ -180,6 +178,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="viewControl" destination="6Ph-gS-3Oh" id="GZ9-WK-vBI"/>
                         <outlet property="viewGold" destination="Qr5-af-yyr" id="PKk-1s-oHz"/>
                         <outlet property="viewLvl" destination="vsX-IY-Bt9" id="0oT-E0-kY9"/>
                         <outlet property="viewLvlProgress" destination="yeF-mQ-0pB" id="Hfc-9g-6Hz"/>

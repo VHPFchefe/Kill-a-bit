@@ -50,6 +50,10 @@ class Player : RewardPlayer {
         self.gold += rewardGold
     }
     
+    func Invest(costGold : Int){
+        self.gold -= costGold
+    }
+    
     func StageUp(){
         self.stage += 1
         print("Bora Bill, Fase :  \(self.stage)")
