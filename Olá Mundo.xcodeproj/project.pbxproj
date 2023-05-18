@@ -1,0 +1,635 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E6302B882A159C300086B200 /* Mob.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6302B872A159C300086B200 /* Mob.swift */; };
+		E6302B8D2A15AA400086B200 /* Battle.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6302B8C2A15AA400086B200 /* Battle.swift */; };
+		E6302B8F2A15ABA90086B200 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6302B8E2A15ABA90086B200 /* Player.swift */; };
+		E6302B912A15AC8F0086B200 /* Reward.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6302B902A15AC8F0086B200 /* Reward.swift */; };
+		E6E0D74A2A12F02100D9FA9D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6E0D7492A12F02100D9FA9D /* AppDelegate.swift */; };
+		E6E0D74C2A12F02100D9FA9D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6E0D74B2A12F02100D9FA9D /* SceneDelegate.swift */; };
+		E6E0D74E2A12F02100D9FA9D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6E0D74D2A12F02100D9FA9D /* ViewController.swift */; };
+		E6E0D7512A12F02100D9FA9D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E6E0D74F2A12F02100D9FA9D /* Main.storyboard */; };
+		E6E0D7532A12F02300D9FA9D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E6E0D7522A12F02300D9FA9D /* Assets.xcassets */; };
+		E6E0D7562A12F02300D9FA9D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E6E0D7542A12F02300D9FA9D /* LaunchScreen.storyboard */; };
+		E6E0D7612A12F02400D9FA9D /* Ola__MundoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6E0D7602A12F02400D9FA9D /* Ola__MundoTests.swift */; };
+		E6E0D76B2A12F02400D9FA9D /* Ola__MundoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6E0D76A2A12F02400D9FA9D /* Ola__MundoUITests.swift */; };
+		E6E0D76D2A12F02400D9FA9D /* Ola__MundoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6E0D76C2A12F02400D9FA9D /* Ola__MundoUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E6E0D75D2A12F02300D9FA9D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E6E0D73E2A12F02000D9FA9D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E6E0D7452A12F02000D9FA9D;
+			remoteInfo = "Olá Mundo";
+		};
+		E6E0D7672A12F02400D9FA9D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E6E0D73E2A12F02000D9FA9D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E6E0D7452A12F02000D9FA9D;
+			remoteInfo = "Olá Mundo";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		E6302B872A159C300086B200 /* Mob.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mob.swift; sourceTree = "<group>"; };
+		E6302B8C2A15AA400086B200 /* Battle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Battle.swift; sourceTree = "<group>"; };
+		E6302B8E2A15ABA90086B200 /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		E6302B902A15AC8F0086B200 /* Reward.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reward.swift; sourceTree = "<group>"; };
+		E6E0D7462A12F02000D9FA9D /* Olá Mundo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Olá Mundo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E6E0D7492A12F02100D9FA9D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E6E0D74B2A12F02100D9FA9D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		E6E0D74D2A12F02100D9FA9D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E6E0D7502A12F02100D9FA9D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E6E0D7522A12F02300D9FA9D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E6E0D7552A12F02300D9FA9D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E6E0D7572A12F02300D9FA9D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E6E0D75C2A12F02300D9FA9D /* Olá MundoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Olá MundoTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E6E0D7602A12F02400D9FA9D /* Ola__MundoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ola__MundoTests.swift; sourceTree = "<group>"; };
+		E6E0D7662A12F02400D9FA9D /* Olá MundoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Olá MundoUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E6E0D76A2A12F02400D9FA9D /* Ola__MundoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ola__MundoUITests.swift; sourceTree = "<group>"; };
+		E6E0D76C2A12F02400D9FA9D /* Ola__MundoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ola__MundoUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E6E0D7432A12F02000D9FA9D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E6E0D7592A12F02300D9FA9D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E6E0D7632A12F02400D9FA9D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E6302B892A159C440086B200 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E6302B872A159C300086B200 /* Mob.swift */,
+				E6302B8C2A15AA400086B200 /* Battle.swift */,
+				E6302B8E2A15ABA90086B200 /* Player.swift */,
+				E6302B902A15AC8F0086B200 /* Reward.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E6E0D73D2A12F02000D9FA9D = {
+			isa = PBXGroup;
+			children = (
+				E6E0D7482A12F02100D9FA9D /* Olá Mundo */,
+				E6E0D75F2A12F02400D9FA9D /* Olá MundoTests */,
+				E6E0D7692A12F02400D9FA9D /* Olá MundoUITests */,
+				E6E0D7472A12F02000D9FA9D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E6E0D7472A12F02000D9FA9D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E6E0D7462A12F02000D9FA9D /* Olá Mundo.app */,
+				E6E0D75C2A12F02300D9FA9D /* Olá MundoTests.xctest */,
+				E6E0D7662A12F02400D9FA9D /* Olá MundoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E6E0D7482A12F02100D9FA9D /* Olá Mundo */ = {
+			isa = PBXGroup;
+			children = (
+				E6302B892A159C440086B200 /* Model */,
+				E6E0D7492A12F02100D9FA9D /* AppDelegate.swift */,
+				E6E0D74B2A12F02100D9FA9D /* SceneDelegate.swift */,
+				E6E0D74D2A12F02100D9FA9D /* ViewController.swift */,
+				E6E0D74F2A12F02100D9FA9D /* Main.storyboard */,
+				E6E0D7522A12F02300D9FA9D /* Assets.xcassets */,
+				E6E0D7542A12F02300D9FA9D /* LaunchScreen.storyboard */,
+				E6E0D7572A12F02300D9FA9D /* Info.plist */,
+			);
+			path = "Olá Mundo";
+			sourceTree = "<group>";
+		};
+		E6E0D75F2A12F02400D9FA9D /* Olá MundoTests */ = {
+			isa = PBXGroup;
+			children = (
+				E6E0D7602A12F02400D9FA9D /* Ola__MundoTests.swift */,
+			);
+			path = "Olá MundoTests";
+			sourceTree = "<group>";
+		};
+		E6E0D7692A12F02400D9FA9D /* Olá MundoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				E6E0D76A2A12F02400D9FA9D /* Ola__MundoUITests.swift */,
+				E6E0D76C2A12F02400D9FA9D /* Ola__MundoUITestsLaunchTests.swift */,
+			);
+			path = "Olá MundoUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E6E0D7452A12F02000D9FA9D /* Olá Mundo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E6E0D7702A12F02400D9FA9D /* Build configuration list for PBXNativeTarget "Olá Mundo" */;
+			buildPhases = (
+				E6E0D7422A12F02000D9FA9D /* Sources */,
+				E6E0D7432A12F02000D9FA9D /* Frameworks */,
+				E6E0D7442A12F02000D9FA9D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Olá Mundo";
+			productName = "Olá Mundo";
+			productReference = E6E0D7462A12F02000D9FA9D /* Olá Mundo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E6E0D75B2A12F02300D9FA9D /* Olá MundoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E6E0D7732A12F02400D9FA9D /* Build configuration list for PBXNativeTarget "Olá MundoTests" */;
+			buildPhases = (
+				E6E0D7582A12F02300D9FA9D /* Sources */,
+				E6E0D7592A12F02300D9FA9D /* Frameworks */,
+				E6E0D75A2A12F02300D9FA9D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E6E0D75E2A12F02300D9FA9D /* PBXTargetDependency */,
+			);
+			name = "Olá MundoTests";
+			productName = "Olá MundoTests";
+			productReference = E6E0D75C2A12F02300D9FA9D /* Olá MundoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		E6E0D7652A12F02400D9FA9D /* Olá MundoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E6E0D7762A12F02400D9FA9D /* Build configuration list for PBXNativeTarget "Olá MundoUITests" */;
+			buildPhases = (
+				E6E0D7622A12F02400D9FA9D /* Sources */,
+				E6E0D7632A12F02400D9FA9D /* Frameworks */,
+				E6E0D7642A12F02400D9FA9D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E6E0D7682A12F02400D9FA9D /* PBXTargetDependency */,
+			);
+			name = "Olá MundoUITests";
+			productName = "Olá MundoUITests";
+			productReference = E6E0D7662A12F02400D9FA9D /* Olá MundoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E6E0D73E2A12F02000D9FA9D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					E6E0D7452A12F02000D9FA9D = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					E6E0D75B2A12F02300D9FA9D = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = E6E0D7452A12F02000D9FA9D;
+					};
+					E6E0D7652A12F02400D9FA9D = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = E6E0D7452A12F02000D9FA9D;
+					};
+				};
+			};
+			buildConfigurationList = E6E0D7412A12F02000D9FA9D /* Build configuration list for PBXProject "Olá Mundo" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E6E0D73D2A12F02000D9FA9D;
+			productRefGroup = E6E0D7472A12F02000D9FA9D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E6E0D7452A12F02000D9FA9D /* Olá Mundo */,
+				E6E0D75B2A12F02300D9FA9D /* Olá MundoTests */,
+				E6E0D7652A12F02400D9FA9D /* Olá MundoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E6E0D7442A12F02000D9FA9D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E6E0D7562A12F02300D9FA9D /* LaunchScreen.storyboard in Resources */,
+				E6E0D7532A12F02300D9FA9D /* Assets.xcassets in Resources */,
+				E6E0D7512A12F02100D9FA9D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E6E0D75A2A12F02300D9FA9D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E6E0D7642A12F02400D9FA9D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E6E0D7422A12F02000D9FA9D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E6E0D74E2A12F02100D9FA9D /* ViewController.swift in Sources */,
+				E6E0D74A2A12F02100D9FA9D /* AppDelegate.swift in Sources */,
+				E6302B882A159C300086B200 /* Mob.swift in Sources */,
+				E6302B912A15AC8F0086B200 /* Reward.swift in Sources */,
+				E6302B8F2A15ABA90086B200 /* Player.swift in Sources */,
+				E6E0D74C2A12F02100D9FA9D /* SceneDelegate.swift in Sources */,
+				E6302B8D2A15AA400086B200 /* Battle.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E6E0D7582A12F02300D9FA9D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E6E0D7612A12F02400D9FA9D /* Ola__MundoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E6E0D7622A12F02400D9FA9D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E6E0D76B2A12F02400D9FA9D /* Ola__MundoUITests.swift in Sources */,
+				E6E0D76D2A12F02400D9FA9D /* Ola__MundoUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E6E0D75E2A12F02300D9FA9D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E6E0D7452A12F02000D9FA9D /* Olá Mundo */;
+			targetProxy = E6E0D75D2A12F02300D9FA9D /* PBXContainerItemProxy */;
+		};
+		E6E0D7682A12F02400D9FA9D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E6E0D7452A12F02000D9FA9D /* Olá Mundo */;
+			targetProxy = E6E0D7672A12F02400D9FA9D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E6E0D74F2A12F02100D9FA9D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E6E0D7502A12F02100D9FA9D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E6E0D7542A12F02300D9FA9D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E6E0D7552A12F02300D9FA9D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E6E0D76E2A12F02400D9FA9D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E6E0D76F2A12F02400D9FA9D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E6E0D7712A12F02400D9FA9D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = X6R46YMZ66;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Olá Mundo/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Agendador Fácil";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.business";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "chefs.Ola--Mundo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E6E0D7722A12F02400D9FA9D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = X6R46YMZ66;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Olá Mundo/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Agendador Fácil";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.business";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "chefs.Ola--Mundo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		E6E0D7742A12F02400D9FA9D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "chefs.Ola--MundoTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Olá Mundo.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Olá Mundo";
+			};
+			name = Debug;
+		};
+		E6E0D7752A12F02400D9FA9D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "chefs.Ola--MundoTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Olá Mundo.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Olá Mundo";
+			};
+			name = Release;
+		};
+		E6E0D7772A12F02400D9FA9D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "chefs.Ola--MundoUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Olá Mundo";
+			};
+			name = Debug;
+		};
+		E6E0D7782A12F02400D9FA9D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "chefs.Ola--MundoUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Olá Mundo";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E6E0D7412A12F02000D9FA9D /* Build configuration list for PBXProject "Olá Mundo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E6E0D76E2A12F02400D9FA9D /* Debug */,
+				E6E0D76F2A12F02400D9FA9D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E6E0D7702A12F02400D9FA9D /* Build configuration list for PBXNativeTarget "Olá Mundo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E6E0D7712A12F02400D9FA9D /* Debug */,
+				E6E0D7722A12F02400D9FA9D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E6E0D7732A12F02400D9FA9D /* Build configuration list for PBXNativeTarget "Olá MundoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E6E0D7742A12F02400D9FA9D /* Debug */,
+				E6E0D7752A12F02400D9FA9D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E6E0D7762A12F02400D9FA9D /* Build configuration list for PBXNativeTarget "Olá MundoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E6E0D7772A12F02400D9FA9D /* Debug */,
+				E6E0D7782A12F02400D9FA9D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E6E0D73E2A12F02000D9FA9D /* Project object */;
+}
