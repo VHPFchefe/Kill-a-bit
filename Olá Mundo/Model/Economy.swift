@@ -47,4 +47,12 @@ class Economy{
         return strengthDamage * weaponDamage
     }
     
+    func GetCostUpgradeWeapon() -> Int{
+        return costUpgradeWeapon
+    }
+    
+    func GetCostUpgradeStrength() -> Int {
+        return costUpgradeStrenght
+    }
+    
 }

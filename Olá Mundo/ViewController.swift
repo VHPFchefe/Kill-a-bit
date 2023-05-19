@@ -2,25 +2,39 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    
+  let font : UIFont = UIFont(name: "Arial", size: 18) ?? UIFont.systemFont(ofSize: 18)
+    let playerOnline = Player(name: "Chefe")
+    let mob = Mob(stage: 1)
     var timer: Timer?
     var battle: Battle!
     var economy: Economy!
     var viewLabelBattle : LabelBattleAttack!
+    func ViewUpgradesUpdates(font : UIFont){
+        
+        ViewUpdate()
+        viewUpgradeWeapon.setTitle("LvL + Arsenal \(economy.GetCostUpgradeWeapon()) (g)", for: .normal)
+        viewUpgradeStrength.setTitle("LvL + Força \(economy.GetCostUpgradeStrength()) (g)", for: .normal);
+
+        viewUpgradeStrength.titleLabel?.textAlignment = .center
+        viewUpgradeWeapon.titleLabel?.textAlignment = .center
+            
+        viewUpgradeStrength.titleLabel?.font = font
+        viewUpgradeWeapon.titleLabel?.font = font
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         economy = Economy()
-        
         battle = Battle(mob: mob, player: playerOnline, economy: economy)
-        ViewUpdate()
+
         
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(handleTap(_:)))
                 viewControl.addGestureRecognizer(tapGesture)
+
+        ViewUpgradesUpdates(font: font)
     }
     
-    let playerOnline = Player(name: "Chefe")
-    let mob = Mob(stage: 1)
     
     @IBOutlet weak var viewPlayer: UILabel!
     
@@ -32,34 +46,48 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var viewLvl: UILabel!
     
-
+    @IBOutlet weak var viewLife : UILabel!
+    
+    @IBOutlet weak var Book: UIButton!
+    
+    @IBAction func OpenTheThecaBook(_ sender: Any) {
+        
+    }
+    
     @IBAction func Tap(_ sender: Any) {
-        if(battle.Battle()){
-            ViewUpdate()
-        }
+        battle.Battle()
+        ViewUpdate()
     }
     
     @IBAction func UpgradeStrength(_ sender: Any) {
         playerOnline.Invest(costGold: economy.DamageUpgrade(gold: playerOnline.GetGold()))
-        ViewUpdate()
+        ViewUpgradesUpdates(font: font)
     }
     
     @IBAction func UpgradeWeapon(_ sender: Any) {
         playerOnline.Invest(costGold:  economy.WeaponUpgrade(gold: playerOnline.GetGold()))
-        ViewUpdate()
+        ViewUpgradesUpdates(font: font)
     }
+    
+    @IBOutlet weak var viewDamage : UILabel!
     
     @IBOutlet weak var viewControl : UIControl!
     
     @IBOutlet weak var viewLifeMob : UIProgressView!
     
+    @IBOutlet weak var viewUpgradeStrength: UIButton!
+    
+    @IBOutlet weak var viewUpgradeWeapon: UIButton!
     
     func ViewUpdate(){
         viewLvlProgress.setProgress(playerOnline.GetLVLProgress(), animated: true)
         viewLvl.text! = "lvl \(String(playerOnline.GetLvL()))"
-        viewGold.text! = "Ouro:  \(String(playerOnline.GetGold()))"
+        viewGold.text! = "Ouro:  \(String(playerOnline.GetGold())) (g)"
         viewStage.text! = "Fase: \(String(playerOnline.GetStage()))"
         viewPlayer.text! = String(playerOnline.GetName())
+        viewLifeMob.setProgress(mob.GetLifeSpawn() / 100 * mob.GetLife(), animated: false)
+        viewLife.text = "\(String(format: "%.1f", mob.GetLife())) / \(String(format: "%.1f", mob.GetLifeSpawn()))"
+        viewDamage.text! = "Dano =  \(String(format: "%.1f", battle.GetDamagePlayer()))"
     }
     
     @objc func handleTap(_ gesture: UITapGestureRecognizer) {
@@ -80,6 +108,7 @@ class ViewController: UIViewController {
       
         // Configura o temporizador
         timer = Timer.scheduledTimer(timeInterval: 0.3, target: self, selector: #selector(removeCustomView), userInfo: nil, repeats: false)
+        
     }
     
     @objc func removeCustomView() {

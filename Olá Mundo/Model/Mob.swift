@@ -5,17 +5,25 @@ class Mob {
     private var life : Float
 
     init(stage : Int) {
-        self.life = lifeSpawn + (lifeSpawn * Float(stage) / 10)
+        self.life = lifeSpawn//lifeSpawn + (lifeSpawn * Float(stage) / 10)
     }
     
     func GetLife() -> Float{
         return life
     }
     
-    func Spawn(stage : Int){
-        life = lifeSpawn + (lifeSpawn * Float(stage) / 10)
+    func GetLifeSpawn() -> Float{
+        return lifeSpawn
+    }
+    
+    func Spawn(){
+        life = lifeSpawn
         
             print("Ta Saindo da Jaula o Monstro (HP: \(life))")
+    }
+    
+    func GrowthMob(stage : Int){
+            lifeSpawn += (lifeSpawn * Float(stage) / 50)
     }
     
     func Damage (damage : Float){

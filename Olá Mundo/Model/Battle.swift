@@ -19,19 +19,32 @@ class Battle {
         self.player = player
     }
     
-    func Battle () -> Bool{
-        mob.Damage(damage: player.GetDamage() + economy.GetDamage())
+    func GetDamagePlayer() -> Float{
+        return player.GetDamage() + economy.GetDamage()
+    }
+    
+    func Battle (){
+        var stageNow = player.GetStage()
+        mob.Damage(damage: GetDamagePlayer())
             
         if(mob.GetLife() <= 0){
+            
             player.EarnReward()
             stage_progress -= 1
+            
             if(stage_progress == 0) {
                 player.StageUp()
                 stage_progress = stageTotalMob
             }
-            mob.Spawn(stage: player.GetStage())
-            return true
+            
+            if(stageNow < player.GetStage()){
+                mob.GrowthMob(stage: player.GetStage())
+                
+            }
+            
+            mob.Spawn()
+            
         }
-        return false
+        
     }
 }
