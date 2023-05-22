@@ -8,13 +8,13 @@
 import Foundation
 
 class Player : RewardPlayer {
-    private var name : String
-    private var damage : Float
-    private var lvl : Int
-    private var lvlProgress : Float
-    private var gold : Int
-    private var stage : Int
-    private var stageProgress : Int
+    private(set) var name : String
+    private(set) var damage : Float
+    private(set) var lvl : Int
+    private(set) var lvlProgress : Float
+    private(set) var gold : Int
+    private(set) var stage : Int
+    private(set) var stageProgress : Int
     
     init(name: String) {
         self.name = name
@@ -27,11 +27,12 @@ class Player : RewardPlayer {
     }
     
     override func EarnReward() {
+        
         let rewardGold = Int(1+self.stage / 10)
-        // compilador n guento, então vou quebrar esses coef aqui
+        print("Lucrou \(rewardGold) !")
+        
         let coeflvl = 1/(100 * Float(lvl))
         let rewardLvLProgress = Float(0.01 + coeflvl * Float(stage))
-        print("Lucrou \(rewardGold) !")
         print("Progrediu \(rewardLvLProgress)%")
         
         self.lvlProgress += rewardLvLProgress
@@ -64,29 +65,5 @@ class Player : RewardPlayer {
         self.damage += 1
         print("Evouluiu 1 LVL, agora está no LVL \(self.lvl)")
         print("Ta usando bomba ?  Seu dano agora é \(self.damage)")
-    }
-    
-    func GetDamage() -> Float{
-        return damage
-    }
-    
-    func GetGold() -> Int{
-        return gold
-    }
-    
-    func GetLvL() -> Int{
-        return lvl
-    }
-
-    func GetLVLProgress() -> Float{
-        return lvlProgress
-    }
-    
-    func GetName() -> String {
-        return name
-    }
-    
-    func GetStage() -> Int{
-        return stage
     }
 }

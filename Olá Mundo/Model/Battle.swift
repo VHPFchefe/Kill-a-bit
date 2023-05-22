@@ -1,11 +1,12 @@
 import Foundation
 
 class Battle {
+    typealias Stage = Int
     private var economy : Economy
-    private var mob : Mob
-    private var player : Player
-    private var stageTotalMob = 10
-    private var stage_progress = 10
+    private(set) var mob : Mob
+    private(set) var player : Player
+    private(set) var stageTotalMob = 10
+    private(set) var stage_progress = 10
     
     
     init(mob: Mob, player: Player, economy : Economy) {
@@ -20,14 +21,14 @@ class Battle {
     }
     
     func GetDamagePlayer() -> Float{
-        return player.GetDamage() + economy.GetDamage()
+        return player.damage + economy.GetDamage()
     }
     
     func Battle (){
-        var stageNow = player.GetStage()
-        mob.Damage(damage: GetDamagePlayer())
+        var stageNow = player.stage
+        mob.damage(damage: GetDamagePlayer())
             
-        if(mob.GetLife() <= 0){
+        if(mob.life <= 0){
             
             player.EarnReward()
             stage_progress -= 1
@@ -37,13 +38,11 @@ class Battle {
                 stage_progress = stageTotalMob
             }
             
-            if(stageNow < player.GetStage()){
-                mob.GrowthMob(stage: player.GetStage())
-                
+            if(stageNow == 1){
+                mob = Mob(monster: Mob.Monster.bigRat, stage: player.stage)
             }
             
-            mob.Spawn()
-            
+            mob = Mob(monster: Mob.Monster.rat, stage: player.stage)
         }
         
     }

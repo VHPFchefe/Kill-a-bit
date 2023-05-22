@@ -5,9 +5,9 @@ class ViewController: UIViewController {
     
   let font : UIFont = UIFont(name: "Arial", size: 18) ?? UIFont.systemFont(ofSize: 18)
     let playerOnline = Player(name: "Chefe")
-    let mob = Mob(stage: 1)
-    var timer: Timer?
     var battle: Battle!
+    var mob = Mob(stage: 1)
+    var timer: Timer?
     var economy: Economy!
     var viewLabelBattle : LabelBattleAttack!
     func ViewUpgradesUpdates(font : UIFont){
@@ -60,12 +60,12 @@ class ViewController: UIViewController {
     }
     
     @IBAction func UpgradeStrength(_ sender: Any) {
-        playerOnline.Invest(costGold: economy.DamageUpgrade(gold: playerOnline.GetGold()))
+        playerOnline.Invest(costGold: economy.DamageUpgrade(gold: playerOnline.gold))
         ViewUpgradesUpdates(font: font)
     }
     
     @IBAction func UpgradeWeapon(_ sender: Any) {
-        playerOnline.Invest(costGold:  economy.WeaponUpgrade(gold: playerOnline.GetGold()))
+        playerOnline.Invest(costGold:  economy.WeaponUpgrade(gold: playerOnline.gold))
         ViewUpgradesUpdates(font: font)
     }
     
@@ -80,14 +80,15 @@ class ViewController: UIViewController {
     @IBOutlet weak var viewUpgradeWeapon: UIButton!
     
     func ViewUpdate(){
-        viewLvlProgress.setProgress(playerOnline.GetLVLProgress(), animated: true)
-        viewLvl.text! = "lvl \(String(playerOnline.GetLvL()))"
-        viewGold.text! = "Ouro:  \(String(playerOnline.GetGold())) (g)"
-        viewStage.text! = "Fase: \(String(playerOnline.GetStage()))"
-        viewPlayer.text! = String(playerOnline.GetName())
-        viewLifeMob.setProgress(mob.GetLifeSpawn() / 100 * mob.GetLife(), animated: false)
-        viewLife.text = "\(String(format: "%.1f", mob.GetLife())) / \(String(format: "%.1f", mob.GetLifeSpawn()))"
+        viewLvlProgress.setProgress(playerOnline.lvlProgress, animated: true)
+        viewLvl.text! = "lvl \(String(playerOnline.lvl))"
+        viewGold.text! = "Ouro:  \(String(playerOnline.gold)) (g)"
+        viewStage.text! = "Fase: \(String(playerOnline.stage))"
+        viewPlayer.text! = String(playerOnline.name)
+        viewLifeMob.setProgress(mob.lifeSpawn / 100 * mob.life, animated: false)
+        viewLife.text = "\(String(format: "%.1f", mob.life)) / \(String(format: "%.1f", mob.lifeSpawn))"
         viewDamage.text! = "Dano =  \(String(format: "%.1f", battle.GetDamagePlayer()))"
+        print(mob.life)
     }
     
     @objc func handleTap(_ gesture: UITapGestureRecognizer) {

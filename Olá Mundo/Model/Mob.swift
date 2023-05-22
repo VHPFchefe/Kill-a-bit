@@ -1,33 +1,28 @@
 import Foundation
 
 class Mob {
-    private var lifeSpawn : Float = 10
-    private var life : Float
+    typealias Stage = Int
+    
+    var monster: Monster
+    private let baseXp: Float = 0.001
+    private(set) var lifeSpawn: Float
+    private(set) var life: Float
 
-    init(stage : Int) {
-        self.life = lifeSpawn//lifeSpawn + (lifeSpawn * Float(stage) / 10)
-    }
-    
-    func GetLife() -> Float{
-        return life
-    }
-    
-    func GetLifeSpawn() -> Float{
-        return lifeSpawn
-    }
-    
-    func Spawn(){
+    init(monster: Monster, stage: Stage) {
+        self.monster = monster
+        /*lifeSpawn = 1
+        life = 1*/
+        lifeSpawn = (0.05 * Float(stage - 1) * monster.baseLife) + monster.baseLife
         life = lifeSpawn
-        
-            print("Ta Saindo da Jaula o Monstro (HP: \(life))")
+        print("Ta Saindo da Jaula o Monstro (HP: \(life))")
     }
     
-    func GrowthMob(stage : Int){
-            lifeSpawn += (lifeSpawn * Float(stage) / 50)
-    }
-    
-    func Damage (damage : Float){
+    func damage(damage : Float){
         print("Oia a pedra ! Dano: \(damage)")
         life -= damage
+    }
+    
+    func rewardXp(atStage stage: Stage) -> Float {
+        return baseXp * Float(stage)
     }
 }
