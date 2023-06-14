@@ -1,15 +1,15 @@
 import UIKit
 
 class ViewController: UIViewController {
-
     
-  let font : UIFont = UIFont(name: "Arial", size: 18) ?? UIFont.systemFont(ofSize: 18)
+    let font : UIFont = UIFont(name: "Arial", size: 18) ?? UIFont.systemFont(ofSize: 18)
     let playerOnline = Player(name: "Chefe")
     var battle: Battle!
-    var mob = Mob(stage: 1)
+    var mob = Mob(monster: Mob.Monster.rat, stage: 1)
     var timer: Timer?
     var economy: Economy!
     var viewLabelBattle : LabelBattleAttack!
+    
     func ViewUpgradesUpdates(font : UIFont){
         
         ViewUpdate()
@@ -28,7 +28,6 @@ class ViewController: UIViewController {
         economy = Economy()
         battle = Battle(mob: mob, player: playerOnline, economy: economy)
 
-        
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(handleTap(_:)))
                 viewControl.addGestureRecognizer(tapGesture)
 
