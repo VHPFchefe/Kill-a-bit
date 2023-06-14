@@ -12,7 +12,8 @@ class Mob {
         self.monster = monster
         /*lifeSpawn = 1
         life = 1*/
-        lifeSpawn = (0.05 * Float(stage - 1) * monster.baseLife) + monster.baseLife
+        let nIsOneCaseWhenStageIsBetterOne = stage == 1 ? 0:1
+        lifeSpawn = (0.05 * (Float(stage - (nIsOneCaseWhenStageIsBetterOne))) * monster.baseLife) + monster.baseLife
         life = lifeSpawn
         print("Ta Saindo da Jaula o Monstro (HP: \(life))")
     }

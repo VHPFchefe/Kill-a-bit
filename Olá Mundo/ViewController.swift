@@ -5,9 +5,9 @@ class ViewController: UIViewController {
     let font : UIFont = UIFont(name: "Arial", size: 18) ?? UIFont.systemFont(ofSize: 18)
     let playerOnline = Player(name: "Chefe")
     var battle: Battle!
-    var mob = Mob(monster: Mob.Monster.rat, stage: 1)
     var timer: Timer?
     var economy: Economy!
+    var mobInicio: Mob!
     var viewLabelBattle : LabelBattleAttack!
     
     func ViewUpgradesUpdates(font : UIFont){
@@ -26,7 +26,9 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         economy = Economy()
-        battle = Battle(mob: mob, player: playerOnline, economy: economy)
+        
+        mobInicio = Mob(monster: Mob.Monster.rat, stage: playerOnline.stage)
+        battle = Battle(mob: mobInicio, player: playerOnline, economy: economy)
 
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(handleTap(_:)))
                 viewControl.addGestureRecognizer(tapGesture)
@@ -84,10 +86,10 @@ class ViewController: UIViewController {
         viewGold.text! = "Ouro:  \(String(playerOnline.gold)) (g)"
         viewStage.text! = "Fase: \(String(playerOnline.stage))"
         viewPlayer.text! = String(playerOnline.name)
-        viewLifeMob.setProgress(mob.lifeSpawn / 100 * mob.life, animated: false)
-        viewLife.text = "\(String(format: "%.1f", mob.life)) / \(String(format: "%.1f", mob.lifeSpawn))"
+        viewLifeMob.setProgress(battle.mob.lifeSpawn / 100 * battle.mob.life, animated: false)
+        viewLife.text = "\(String(format: "%.1f", battle.mob.life)) / \(String(format: "%.1f", battle.mob.lifeSpawn))"
         viewDamage.text! = "Dano =  \(String(format: "%.1f", battle.GetDamagePlayer()))"
-        print(mob.life)
+        print(battle.mob.life)
     }
     
     @objc func handleTap(_ gesture: UITapGestureRecognizer) {

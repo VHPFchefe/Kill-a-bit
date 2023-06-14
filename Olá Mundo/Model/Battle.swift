@@ -5,8 +5,8 @@ class Battle {
     private var economy : Economy
     private(set) var mob : Mob
     private(set) var player : Player
-    private(set) var stageTotalMob = 10
-    private(set) var stage_progress = 10
+    private(set) var stageProgress = 10
+    private(set) var mobsDefeated = 0
     
     
     init(mob: Mob, player: Player, economy : Economy) {
@@ -25,24 +25,26 @@ class Battle {
     }
     
     func Battle (){
-        var stageNow = player.stage
         mob.damage(damage: GetDamagePlayer())
             
         if(mob.life <= 0){
             
             player.EarnReward()
-            stage_progress -= 1
+            stageProgress -= 1
             
-            if(stage_progress == 0) {
-                player.StageUp()
-                stage_progress = stageTotalMob
-            }
-            
-            if(stageNow == 1){
+            if(mobsDefeated == 10){
                 mob = Mob(monster: Mob.Monster.bigRat, stage: player.stage)
+                return
             }
             
+            
+            if(stageProgress == 11) {
+                player.StageUp()
+            }
+            
+            mobsDefeated += 1
             mob = Mob(monster: Mob.Monster.rat, stage: player.stage)
+            print(mob.life)
         }
         
     }
