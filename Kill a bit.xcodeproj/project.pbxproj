@@ -20,9 +20,9 @@
 		E6E0D7512A12F02100D9FA9D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E6E0D74F2A12F02100D9FA9D /* Main.storyboard */; };
 		E6E0D7532A12F02300D9FA9D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E6E0D7522A12F02300D9FA9D /* Assets.xcassets */; };
 		E6E0D7562A12F02300D9FA9D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E6E0D7542A12F02300D9FA9D /* LaunchScreen.storyboard */; };
-		E6E0D7612A12F02400D9FA9D /* Ola__MundoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6E0D7602A12F02400D9FA9D /* Ola__MundoTests.swift */; };
-		E6E0D76B2A12F02400D9FA9D /* Ola__MundoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6E0D76A2A12F02400D9FA9D /* Ola__MundoUITests.swift */; };
-		E6E0D76D2A12F02400D9FA9D /* Ola__MundoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6E0D76C2A12F02400D9FA9D /* Ola__MundoUITestsLaunchTests.swift */; };
+		E6E0D7612A12F02400D9FA9D /* MyFirstProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6E0D7602A12F02400D9FA9D /* MyFirstProjectTests.swift */; };
+		E6E0D76B2A12F02400D9FA9D /* MyFirstProjectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6E0D76A2A12F02400D9FA9D /* MyFirstProjectUITests.swift */; };
+		E6E0D76D2A12F02400D9FA9D /* MyFirstProjectUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6E0D76C2A12F02400D9FA9D /* MyFirstProjectUITestsLaunchTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,7 +50,7 @@
 		E6302B902A15AC8F0086B200 /* Reward.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reward.swift; sourceTree = "<group>"; };
 		E6412A222A16DF6700896F44 /* LabelBattleAtack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelBattleAtack.swift; sourceTree = "<group>"; };
 		E6D6B89C2A167BB3008E99B4 /* Economy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Economy.swift; sourceTree = "<group>"; };
-		E6E0D7462A12F02000D9FA9D /* Olá Mundo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Olá Mundo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E6E0D7462A12F02000D9FA9D /* Kill a bit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Kill a bit.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6E0D7492A12F02100D9FA9D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E6E0D74B2A12F02100D9FA9D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		E6E0D74D2A12F02100D9FA9D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -58,11 +58,11 @@
 		E6E0D7522A12F02300D9FA9D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E6E0D7552A12F02300D9FA9D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E6E0D7572A12F02300D9FA9D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E6E0D75C2A12F02300D9FA9D /* Olá MundoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Olá MundoTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		E6E0D7602A12F02400D9FA9D /* Ola__MundoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ola__MundoTests.swift; sourceTree = "<group>"; };
-		E6E0D7662A12F02400D9FA9D /* Olá MundoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Olá MundoUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		E6E0D76A2A12F02400D9FA9D /* Ola__MundoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ola__MundoUITests.swift; sourceTree = "<group>"; };
-		E6E0D76C2A12F02400D9FA9D /* Ola__MundoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ola__MundoUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		E6E0D75C2A12F02300D9FA9D /* Kill a bitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Kill a bitTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E6E0D7602A12F02400D9FA9D /* MyFirstProjectTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyFirstProjectTests.swift; sourceTree = "<group>"; };
+		E6E0D7662A12F02400D9FA9D /* Kill a bitUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Kill a bitUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E6E0D76A2A12F02400D9FA9D /* MyFirstProjectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyFirstProjectUITests.swift; sourceTree = "<group>"; };
+		E6E0D76C2A12F02400D9FA9D /* MyFirstProjectUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyFirstProjectUITestsLaunchTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,9 +106,9 @@
 		E6E0D73D2A12F02000D9FA9D = {
 			isa = PBXGroup;
 			children = (
-				E6E0D7482A12F02100D9FA9D /* Olá Mundo */,
-				E6E0D75F2A12F02400D9FA9D /* Olá MundoTests */,
-				E6E0D7692A12F02400D9FA9D /* Olá MundoUITests */,
+				E6E0D7482A12F02100D9FA9D /* My First Project */,
+				E6E0D75F2A12F02400D9FA9D /* MyFirstProjectTests */,
+				E6E0D7692A12F02400D9FA9D /* MyFirstProjectUITests */,
 				E6E0D7472A12F02000D9FA9D /* Products */,
 			);
 			sourceTree = "<group>";
@@ -116,14 +116,14 @@
 		E6E0D7472A12F02000D9FA9D /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				E6E0D7462A12F02000D9FA9D /* Olá Mundo.app */,
-				E6E0D75C2A12F02300D9FA9D /* Olá MundoTests.xctest */,
-				E6E0D7662A12F02400D9FA9D /* Olá MundoUITests.xctest */,
+				E6E0D7462A12F02000D9FA9D /* Kill a bit.app */,
+				E6E0D75C2A12F02300D9FA9D /* Kill a bitTests.xctest */,
+				E6E0D7662A12F02400D9FA9D /* Kill a bitUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		E6E0D7482A12F02100D9FA9D /* Olá Mundo */ = {
+		E6E0D7482A12F02100D9FA9D /* My First Project */ = {
 			isa = PBXGroup;
 			children = (
 				E6302B892A159C440086B200 /* Model */,
@@ -136,32 +136,32 @@
 				E6E0D7572A12F02300D9FA9D /* Info.plist */,
 				E6412A222A16DF6700896F44 /* LabelBattleAtack.swift */,
 			);
-			path = "Olá Mundo";
+			path = "My First Project";
 			sourceTree = "<group>";
 		};
-		E6E0D75F2A12F02400D9FA9D /* Olá MundoTests */ = {
+		E6E0D75F2A12F02400D9FA9D /* MyFirstProjectTests */ = {
 			isa = PBXGroup;
 			children = (
-				E6E0D7602A12F02400D9FA9D /* Ola__MundoTests.swift */,
+				E6E0D7602A12F02400D9FA9D /* MyFirstProjectTests.swift */,
 			);
-			path = "Olá MundoTests";
+			path = MyFirstProjectTests;
 			sourceTree = "<group>";
 		};
-		E6E0D7692A12F02400D9FA9D /* Olá MundoUITests */ = {
+		E6E0D7692A12F02400D9FA9D /* MyFirstProjectUITests */ = {
 			isa = PBXGroup;
 			children = (
-				E6E0D76A2A12F02400D9FA9D /* Ola__MundoUITests.swift */,
-				E6E0D76C2A12F02400D9FA9D /* Ola__MundoUITestsLaunchTests.swift */,
+				E6E0D76A2A12F02400D9FA9D /* MyFirstProjectUITests.swift */,
+				E6E0D76C2A12F02400D9FA9D /* MyFirstProjectUITestsLaunchTests.swift */,
 			);
-			path = "Olá MundoUITests";
+			path = MyFirstProjectUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		E6E0D7452A12F02000D9FA9D /* Olá Mundo */ = {
+		E6E0D7452A12F02000D9FA9D /* Kill a bit */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E6E0D7702A12F02400D9FA9D /* Build configuration list for PBXNativeTarget "Olá Mundo" */;
+			buildConfigurationList = E6E0D7702A12F02400D9FA9D /* Build configuration list for PBXNativeTarget "Kill a bit" */;
 			buildPhases = (
 				E6E0D7422A12F02000D9FA9D /* Sources */,
 				E6E0D7432A12F02000D9FA9D /* Frameworks */,
@@ -171,14 +171,14 @@
 			);
 			dependencies = (
 			);
-			name = "Olá Mundo";
+			name = "Kill a bit";
 			productName = "Olá Mundo";
-			productReference = E6E0D7462A12F02000D9FA9D /* Olá Mundo.app */;
+			productReference = E6E0D7462A12F02000D9FA9D /* Kill a bit.app */;
 			productType = "com.apple.product-type.application";
 		};
-		E6E0D75B2A12F02300D9FA9D /* Olá MundoTests */ = {
+		E6E0D75B2A12F02300D9FA9D /* Kill a bitTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E6E0D7732A12F02400D9FA9D /* Build configuration list for PBXNativeTarget "Olá MundoTests" */;
+			buildConfigurationList = E6E0D7732A12F02400D9FA9D /* Build configuration list for PBXNativeTarget "Kill a bitTests" */;
 			buildPhases = (
 				E6E0D7582A12F02300D9FA9D /* Sources */,
 				E6E0D7592A12F02300D9FA9D /* Frameworks */,
@@ -189,14 +189,14 @@
 			dependencies = (
 				E6E0D75E2A12F02300D9FA9D /* PBXTargetDependency */,
 			);
-			name = "Olá MundoTests";
+			name = "Kill a bitTests";
 			productName = "Olá MundoTests";
-			productReference = E6E0D75C2A12F02300D9FA9D /* Olá MundoTests.xctest */;
+			productReference = E6E0D75C2A12F02300D9FA9D /* Kill a bitTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		E6E0D7652A12F02400D9FA9D /* Olá MundoUITests */ = {
+		E6E0D7652A12F02400D9FA9D /* Kill a bitUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E6E0D7762A12F02400D9FA9D /* Build configuration list for PBXNativeTarget "Olá MundoUITests" */;
+			buildConfigurationList = E6E0D7762A12F02400D9FA9D /* Build configuration list for PBXNativeTarget "Kill a bitUITests" */;
 			buildPhases = (
 				E6E0D7622A12F02400D9FA9D /* Sources */,
 				E6E0D7632A12F02400D9FA9D /* Frameworks */,
@@ -207,9 +207,9 @@
 			dependencies = (
 				E6E0D7682A12F02400D9FA9D /* PBXTargetDependency */,
 			);
-			name = "Olá MundoUITests";
+			name = "Kill a bitUITests";
 			productName = "Olá MundoUITests";
-			productReference = E6E0D7662A12F02400D9FA9D /* Olá MundoUITests.xctest */;
+			productReference = E6E0D7662A12F02400D9FA9D /* Kill a bitUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -235,7 +235,7 @@
 					};
 				};
 			};
-			buildConfigurationList = E6E0D7412A12F02000D9FA9D /* Build configuration list for PBXProject "Olá Mundo" */;
+			buildConfigurationList = E6E0D7412A12F02000D9FA9D /* Build configuration list for PBXProject "Kill a bit" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -248,9 +248,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				E6E0D7452A12F02000D9FA9D /* Olá Mundo */,
-				E6E0D75B2A12F02300D9FA9D /* Olá MundoTests */,
-				E6E0D7652A12F02400D9FA9D /* Olá MundoUITests */,
+				E6E0D7452A12F02000D9FA9D /* Kill a bit */,
+				E6E0D75B2A12F02300D9FA9D /* Kill a bitTests */,
+				E6E0D7652A12F02400D9FA9D /* Kill a bitUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -304,7 +304,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E6E0D7612A12F02400D9FA9D /* Ola__MundoTests.swift in Sources */,
+				E6E0D7612A12F02400D9FA9D /* MyFirstProjectTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -312,8 +312,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E6E0D76B2A12F02400D9FA9D /* Ola__MundoUITests.swift in Sources */,
-				E6E0D76D2A12F02400D9FA9D /* Ola__MundoUITestsLaunchTests.swift in Sources */,
+				E6E0D76B2A12F02400D9FA9D /* MyFirstProjectUITests.swift in Sources */,
+				E6E0D76D2A12F02400D9FA9D /* MyFirstProjectUITestsLaunchTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -322,12 +322,12 @@
 /* Begin PBXTargetDependency section */
 		E6E0D75E2A12F02300D9FA9D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = E6E0D7452A12F02000D9FA9D /* Olá Mundo */;
+			target = E6E0D7452A12F02000D9FA9D /* Kill a bit */;
 			targetProxy = E6E0D75D2A12F02300D9FA9D /* PBXContainerItemProxy */;
 		};
 		E6E0D7682A12F02400D9FA9D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = E6E0D7452A12F02000D9FA9D /* Olá Mundo */;
+			target = E6E0D7452A12F02000D9FA9D /* Kill a bit */;
 			targetProxy = E6E0D7672A12F02400D9FA9D /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -402,6 +402,8 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "";
+				"INFOPLIST_FILE[sdk=*]" = "";
 				IPHONEOS_DEPLOYMENT_TARGET = 16.5;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -456,6 +458,8 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "";
+				"INFOPLIST_FILE[sdk=iphoneos*]" = "";
 				IPHONEOS_DEPLOYMENT_TARGET = 16.5;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -476,7 +480,8 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = X6R46YMZ66;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Olá Mundo/Info.plist";
+				INFOPLIST_FILE = "./My First Project/Info.plist";
+				"INFOPLIST_FILE[sdk=*]" = "./My First Project/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "Agendador Fácil";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.business";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -508,7 +513,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = X6R46YMZ66;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Olá Mundo/Info.plist";
+				INFOPLIST_FILE = "./My First Project/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "Agendador Fácil";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.business";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -545,7 +550,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Olá Mundo.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Olá Mundo";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Kill a bit.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Kill a bit";
 			};
 			name = Debug;
 		};
@@ -564,7 +569,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Olá Mundo.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Olá Mundo";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Kill a bit.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Kill a bit";
 			};
 			name = Release;
 		};
@@ -605,7 +610,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		E6E0D7412A12F02000D9FA9D /* Build configuration list for PBXProject "Olá Mundo" */ = {
+		E6E0D7412A12F02000D9FA9D /* Build configuration list for PBXProject "Kill a bit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				E6E0D76E2A12F02400D9FA9D /* Debug */,
@@ -614,7 +619,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E6E0D7702A12F02400D9FA9D /* Build configuration list for PBXNativeTarget "Olá Mundo" */ = {
+		E6E0D7702A12F02400D9FA9D /* Build configuration list for PBXNativeTarget "Kill a bit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				E6E0D7712A12F02400D9FA9D /* Debug */,
@@ -623,7 +628,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E6E0D7732A12F02400D9FA9D /* Build configuration list for PBXNativeTarget "Olá MundoTests" */ = {
+		E6E0D7732A12F02400D9FA9D /* Build configuration list for PBXNativeTarget "Kill a bitTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				E6E0D7742A12F02400D9FA9D /* Debug */,
@@ -632,7 +637,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E6E0D7762A12F02400D9FA9D /* Build configuration list for PBXNativeTarget "Olá MundoUITests" */ = {
+		E6E0D7762A12F02400D9FA9D /* Build configuration list for PBXNativeTarget "Kill a bitUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				E6E0D7772A12F02400D9FA9D /* Debug */,
