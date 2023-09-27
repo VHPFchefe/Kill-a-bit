@@ -23,6 +23,18 @@ class ViewController: UIViewController {
         viewUpgradeWeapon.titleLabel?.font = font
     }
     
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "modalSegue",
+            let nav = segue.destination as? UINavigationController,
+           let vc = nav.topViewController as? StatsViewController {
+            vc.poder = "200"
+            vc.totalOuroObtido = "200"
+            vc.totalMonstrosAbatidos = "200"
+            vc.totalChefesAbatidos = "200"
+        }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         economy = Economy()

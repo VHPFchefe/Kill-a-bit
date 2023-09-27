@@ -76,7 +76,7 @@
                                         </buttonConfiguration>
                                         <connections>
                                             <action selector="OpenTheThecaBook:" destination="BYZ-38-t0r" eventType="touchDown" id="XMk-M4-7cY"/>
-                                            <segue destination="gyN-9J-SqN" kind="presentation" id="GXr-Ro-hpl"/>
+                                            <segue destination="gyN-9J-SqN" kind="presentation" identifier="modalSegue" id="GXr-Ro-hpl"/>
                                         </connections>
                                     </button>
                                 </subviews>
