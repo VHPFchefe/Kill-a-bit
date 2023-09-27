@@ -15,6 +15,11 @@ class Player : RewardPlayer {
     private(set) var gold : Int
     private(set) var stage : Int
     private(set) var stageProgress : Int
+    private(set) var totalPower: Float
+    private(set) var totalGoldIncome: Int
+    private(set) var totalMonstersDefeated: Int
+    private(set) var totalBossesDefeated: Int
+    
     
     init(name: String) {
         self.name = name
@@ -24,9 +29,13 @@ class Player : RewardPlayer {
         self.gold = 0
         self.stage = 1
         self.stageProgress = 0
+        self.totalPower = 0
+        self.totalGoldIncome = 0
+        self.totalBossesDefeated = 0
+        self.totalMonstersDefeated = 0
     }
     
-    override func EarnReward() {
+        func EarnReward( isMonster : Bool ) {
         
         let rewardGold = Int(1+self.stage / 10)
         print("Lucrou \(rewardGold) !")
@@ -49,6 +58,13 @@ class Player : RewardPlayer {
         }
         
         self.gold += rewardGold
+        if(isMonster){
+            self.totalMonstersDefeated += 1
+        }else  {
+            self.totalBossesDefeated += 1
+        }
+        totalPower = damage
+        totalGoldIncome += rewardGold
     }
     
     func Invest(costGold : Int){

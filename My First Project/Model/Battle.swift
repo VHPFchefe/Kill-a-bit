@@ -29,8 +29,7 @@ class Battle {
             
         if(mob.life <= 0){
             
-            player.EarnReward()
-            stageProgress -= 1
+            
             
             if(mobsDefeated == 10){
                 mob = Mob(monster: Mob.Monster.bigRat, stage: player.stage)
@@ -40,8 +39,10 @@ class Battle {
             
             if(stageProgress == 11) {
                 player.StageUp()
+                player.EarnReward(isMonster: true)
             }
             
+            player.EarnReward(isMonster: true)
             mobsDefeated += 1
             mob = Mob(monster: Mob.Monster.rat, stage: player.stage)
             print(mob.life)

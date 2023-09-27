@@ -28,10 +28,10 @@ class ViewController: UIViewController {
         if segue.identifier == "modalSegue",
             let nav = segue.destination as? UINavigationController,
            let vc = nav.topViewController as? StatsViewController {
-            vc.poder = "200"
-            vc.totalOuroObtido = "200"
-            vc.totalMonstrosAbatidos = "200"
-            vc.totalChefesAbatidos = "200"
+            vc.power = String(format: "%.1f", playerOnline.totalPower)
+            vc.totalGoldIncome = String(playerOnline.totalGoldIncome)
+            vc.totalMonstersDefeated = String(playerOnline.totalMonstersDefeated)
+            vc.totalBossesDefeated = String(playerOnline.totalBossesDefeated)
         }
     }
     

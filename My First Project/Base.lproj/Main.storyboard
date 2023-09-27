@@ -284,80 +284,106 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Poder" textAlignment="center" lineBreakMode="tailTruncation" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L3k-a8-8AM">
-                                <rect key="frame" x="148" y="123" width="78" height="26"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Poder" textAlignment="center" lineBreakMode="tailTruncation" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L3k-a8-8AM">
+                                <rect key="frame" x="148.5" y="123" width="78" height="26.5"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" name="Copperplate-Bold" family="Copperplate" pointSize="25"/>
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
+                                <color key="shadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <size key="shadowOffset" width="0.0" height="1"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="center" lineBreakMode="tailTruncation" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZDh-9R-GfY">
-                                <rect key="frame" x="179" y="157" width="16" height="26"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" name="Copperplate-Bold" family="Copperplate" pointSize="25"/>
-                                <color key="textColor" systemColor="systemYellowColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Total de Ouro Obtido" textAlignment="center" lineBreakMode="tailTruncation" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4tP-kp-Xv4">
-                                <rect key="frame" x="47" y="207" width="280" height="26"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total de Ouro Obtido" textAlignment="center" lineBreakMode="tailTruncation" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4tP-kp-Xv4">
+                                <rect key="frame" x="47.5" y="200" width="280" height="26.5"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" name="Copperplate-Bold" family="Copperplate" pointSize="25"/>
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
+                                <color key="shadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <size key="shadowOffset" width="0.0" height="1"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="center" lineBreakMode="tailTruncation" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dGt-1Y-5sg">
-                                <rect key="frame" x="179" y="241" width="16" height="26"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" name="Copperplate-Bold" family="Copperplate" pointSize="25"/>
-                                <color key="textColor" systemColor="systemYellowColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Chefes Abatidos" textAlignment="center" lineBreakMode="tailTruncation" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b1c-WJ-awt">
-                                <rect key="frame" x="78" y="296" width="218" height="26"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Chefes Abatidos" textAlignment="center" lineBreakMode="tailTruncation" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b1c-WJ-awt">
+                                <rect key="frame" x="78.5" y="282" width="218" height="26.5"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" name="Copperplate-Bold" family="Copperplate" pointSize="25"/>
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
+                                <color key="shadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <size key="shadowOffset" width="0.0" height="1"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="center" lineBreakMode="tailTruncation" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LXZ-oc-5JX">
-                                <rect key="frame" x="179" y="325" width="16" height="26"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" name="Copperplate-Bold" family="Copperplate" pointSize="25"/>
-                                <color key="textColor" systemColor="systemYellowColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Monstros Abatidos" textAlignment="center" lineBreakMode="tailTruncation" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bZj-tw-9Hq">
-                                <rect key="frame" x="62" y="380" width="250" height="26"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Monstros Abatidos" textAlignment="center" lineBreakMode="tailTruncation" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bZj-tw-9Hq">
+                                <rect key="frame" x="62.5" y="362.5" width="250" height="26.5"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" name="Copperplate-Bold" family="Copperplate" pointSize="25"/>
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
+                                <color key="shadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <size key="shadowOffset" width="0.0" height="1"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="center" lineBreakMode="tailTruncation" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3jc-ZZ-9br">
-                                <rect key="frame" x="179" y="414" width="16" height="26"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZDh-9R-GfY">
+                                <rect key="frame" x="179" y="153.5" width="17.5" height="26.5"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" name="Copperplate-Bold" family="Copperplate" pointSize="25"/>
                                 <color key="textColor" systemColor="systemYellowColor"/>
                                 <nil key="highlightedColor"/>
+                                <color key="shadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <size key="shadowOffset" width="2" height="1"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dGt-1Y-5sg">
+                                <rect key="frame" x="179.5" y="230.5" width="16.5" height="26.5"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="Copperplate-Bold" family="Copperplate" pointSize="25"/>
+                                <color key="textColor" systemColor="systemYellowColor"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <size key="shadowOffset" width="1" height="1"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LXZ-oc-5JX">
+                                <rect key="frame" x="179" y="311" width="17.5" height="26.5"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="Copperplate-Bold" family="Copperplate" pointSize="25"/>
+                                <color key="textColor" systemColor="systemYellowColor"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <size key="shadowOffset" width="2" height="1"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3jc-ZZ-9br">
+                                <rect key="frame" x="179" y="393" width="17.5" height="26.5"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="Copperplate-Bold" family="Copperplate" pointSize="25"/>
+                                <color key="textColor" systemColor="systemYellowColor"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <size key="shadowOffset" width="2" height="1"/>
                             </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="a0T-Yf-1Af"/>
                         <color key="backgroundColor" systemColor="placeholderTextColor"/>
+                        <constraints>
+                            <constraint firstItem="dGt-1Y-5sg" firstAttribute="top" secondItem="4tP-kp-Xv4" secondAttribute="bottom" constant="4" id="E17-ez-n5T"/>
+                            <constraint firstItem="LXZ-oc-5JX" firstAttribute="top" secondItem="dGt-1Y-5sg" secondAttribute="bottom" constant="54" id="EUJ-gt-xPK"/>
+                            <constraint firstItem="3jc-ZZ-9br" firstAttribute="centerX" secondItem="Zjm-Eb-sCJ" secondAttribute="centerX" id="MAZ-dC-QGy"/>
+                            <constraint firstItem="4tP-kp-Xv4" firstAttribute="top" secondItem="ZDh-9R-GfY" secondAttribute="bottom" constant="20" id="Mwi-wn-SWi"/>
+                            <constraint firstItem="L3k-a8-8AM" firstAttribute="centerX" secondItem="Zjm-Eb-sCJ" secondAttribute="centerX" id="PnX-OY-QIu"/>
+                            <constraint firstItem="4tP-kp-Xv4" firstAttribute="centerX" secondItem="Zjm-Eb-sCJ" secondAttribute="centerX" id="QbW-up-wKq"/>
+                            <constraint firstItem="bZj-tw-9Hq" firstAttribute="centerX" secondItem="Zjm-Eb-sCJ" secondAttribute="centerX" id="SM6-Z8-trZ"/>
+                            <constraint firstItem="dGt-1Y-5sg" firstAttribute="centerX" secondItem="Zjm-Eb-sCJ" secondAttribute="centerX" id="ViX-id-e0t"/>
+                            <constraint firstItem="b1c-WJ-awt" firstAttribute="top" secondItem="dGt-1Y-5sg" secondAttribute="bottom" constant="25" id="alG-1H-gfb"/>
+                            <constraint firstItem="3jc-ZZ-9br" firstAttribute="top" secondItem="bZj-tw-9Hq" secondAttribute="bottom" constant="4" id="bJD-FO-Z1f"/>
+                            <constraint firstItem="L3k-a8-8AM" firstAttribute="top" secondItem="a0T-Yf-1Af" secondAttribute="top" constant="67" id="byS-og-qa5"/>
+                            <constraint firstItem="ZDh-9R-GfY" firstAttribute="top" secondItem="L3k-a8-8AM" secondAttribute="bottom" constant="4" id="eXs-vQ-Kxs"/>
+                            <constraint firstItem="ZDh-9R-GfY" firstAttribute="centerX" secondItem="Zjm-Eb-sCJ" secondAttribute="centerX" id="f5O-cv-Yfu"/>
+                            <constraint firstItem="bZj-tw-9Hq" firstAttribute="top" secondItem="LXZ-oc-5JX" secondAttribute="bottom" constant="25" id="iUH-ys-Qpp"/>
+                            <constraint firstItem="b1c-WJ-awt" firstAttribute="centerX" secondItem="Zjm-Eb-sCJ" secondAttribute="centerX" id="jnu-cD-ZWu"/>
+                            <constraint firstItem="LXZ-oc-5JX" firstAttribute="centerX" secondItem="Zjm-Eb-sCJ" secondAttribute="centerX" id="ro5-Fl-et6"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="dbq-ix-ore"/>
                     <connections>
-                        <outlet property="viewPoder" destination="ZDh-9R-GfY" id="m1w-0S-Dqh"/>
-                        <outlet property="viewTotalChefesAbatidos" destination="LXZ-oc-5JX" id="eIV-dd-hyE"/>
-                        <outlet property="viewTotalMonstrosAbatidos" destination="3jc-ZZ-9br" id="vD1-K0-goq"/>
-                        <outlet property="viewTotalOuroObtido" destination="dGt-1Y-5sg" id="1FJ-mu-eT2"/>
+                        <outlet property="viewPower" destination="ZDh-9R-GfY" id="swa-mq-Ode"/>
+                        <outlet property="viewTotalBossesDefeated" destination="LXZ-oc-5JX" id="k78-Fv-mMo"/>
+                        <outlet property="viewTotalGoldIncome" destination="dGt-1Y-5sg" id="ucq-S6-g1z"/>
+                        <outlet property="viewTotalMonstersDefeated" destination="3jc-ZZ-9br" id="vdw-Mw-HbP"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DMy-JR-F0X" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

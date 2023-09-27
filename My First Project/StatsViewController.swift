@@ -4,25 +4,25 @@ import UIKit
 class StatsViewController : ViewController {
     
     
-    var poder : String?
-    var totalOuroObtido : String?
-    var totalMonstrosAbatidos : String?
-    var totalChefesAbatidos : String?
+    var power : String?
+    var totalGoldIncome : String?
+    var totalBossesDefeated : String?
+    var totalMonstersDefeated : String?
     
     
     override func viewDidLoad() {
         title = "Status"
         
-        viewPoder.text = poder
-        viewTotalOuroObtido.text = totalOuroObtido
-        viewTotalChefesAbatidos.text = totalChefesAbatidos
-        viewTotalMonstrosAbatidos.text = totalMonstrosAbatidos
+        viewPower.text = power
+        viewTotalGoldIncome.text = totalGoldIncome
+        viewTotalBossesDefeated.text = totalBossesDefeated
+        viewTotalMonstersDefeated.text = totalMonstersDefeated
         
     }
     
-    @IBOutlet weak var viewPoder : UILabel!
-    @IBOutlet weak var viewTotalOuroObtido : UILabel!
-    @IBOutlet weak var viewTotalMonstrosAbatidos : UILabel!
-    @IBOutlet weak var viewTotalChefesAbatidos : UILabel!
+    @IBOutlet weak var viewPower : UILabel!
+    @IBOutlet weak var viewTotalGoldIncome : UILabel!
+    @IBOutlet weak var viewTotalMonstersDefeated : UILabel!
+    @IBOutlet weak var viewTotalBossesDefeated : UILabel!
     
 }

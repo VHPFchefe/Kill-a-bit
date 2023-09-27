@@ -3,4 +3,114 @@
    uuid = "5CFEF6B3-62E7-4187-97D3-1EF593A5872A"
    type = "1"
    version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "C3CDD3FE-10C1-454B-AF57-71095474E6C7"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "My First Project/StatsViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "26"
+            endingLineNumber = "26"
+            landmarkName = "StatsViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "C3CDD3FE-10C1-454B-AF57-71095474E6C7 - f8c3b8f0d1bf7918"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Kill_a_bit.StatsViewController.viewTotalBossesDefeated.getter : Swift.Optional&lt;__C.UILabel&gt;"
+                  moduleName = "Kill a bit"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/viniciusfloriano/Desktop/Ola%CC%81%20Mundo/My%20First%20Project/StatsViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "26"
+                  endingLineNumber = "26"
+                  offsetFromSymbolStart = "88">
+               </Location>
+               <Location
+                  uuid = "C3CDD3FE-10C1-454B-AF57-71095474E6C7 - 52b1f5246995a504"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Kill_a_bit.StatsViewController.viewTotalBossesDefeated.setter : Swift.Optional&lt;__C.UILabel&gt;"
+                  moduleName = "Kill a bit"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/viniciusfloriano/Desktop/Ola%CC%81%20Mundo/My%20First%20Project/StatsViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "26"
+                  endingLineNumber = "26"
+                  offsetFromSymbolStart = "108">
+               </Location>
+               <Location
+                  uuid = "C3CDD3FE-10C1-454B-AF57-71095474E6C7 - 5a45e6745df1a015"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Kill_a_bit.StatsViewController.viewTotalBossesDefeated.modify : Swift.Optional&lt;__C.UILabel&gt;"
+                  moduleName = "Kill a bit"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/viniciusfloriano/Desktop/Ola%CC%81%20Mundo/My%20First%20Project/StatsViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "26"
+                  endingLineNumber = "26"
+                  offsetFromSymbolStart = "0">
+               </Location>
+               <Location
+                  uuid = "C3CDD3FE-10C1-454B-AF57-71095474E6C7 - b7e66e5de16963b2"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Kill_a_bit.StatsViewController.viewTotalBossesDefeated.modify : Swift.Optional&lt;__C.UILabel&gt; with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "Kill a bit"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/viniciusfloriano/Desktop/Ola%CC%81%20Mundo/My%20First%20Project/StatsViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "26"
+                  endingLineNumber = "26"
+                  offsetFromSymbolStart = "28">
+               </Location>
+               <Location
+                  uuid = "C3CDD3FE-10C1-454B-AF57-71095474E6C7 - 19877e8e10028e35"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Kill_a_bit.StatsViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; Kill_a_bit.StatsViewController"
+                  moduleName = "Kill a bit"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/viniciusfloriano/Desktop/Ola%CC%81%20Mundo/My%20First%20Project/StatsViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "26"
+                  endingLineNumber = "26"
+                  offsetFromSymbolStart = "356">
+               </Location>
+               <Location
+                  uuid = "C3CDD3FE-10C1-454B-AF57-71095474E6C7 - 8fb83c35a8949b3e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Kill_a_bit.StatsViewController.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;Kill_a_bit.StatsViewController&gt;"
+                  moduleName = "Kill a bit"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/viniciusfloriano/Desktop/Ola%CC%81%20Mundo/My%20First%20Project/StatsViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "26"
+                  endingLineNumber = "26"
+                  offsetFromSymbolStart = "340">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
 </Bucket>
